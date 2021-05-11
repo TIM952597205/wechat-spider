@@ -244,10 +244,10 @@ class TaskManager():
             # 重设任务
             sql = "update wechat_article_task set state = 0 where state = 2"
             self._mysqldb.update(sql)
-
-
-if __name__ == '__main__':
-    task_manager = TaskManager()
-
-    result = task_manager.get_task()
-    print(result)
+# 
+#
+# if __name__ == '__main__':
+#     task_manager = TaskManager()
+#
+#     result = task_manager.get_task()
+#     print(result)
