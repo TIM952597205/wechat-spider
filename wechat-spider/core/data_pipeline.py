@@ -51,7 +51,7 @@ def save_article(data):
 def save_article_dynamic(data):
     log.debug(tools.dumps_json(data))
 
-    sql = tools.make_insert_sql('wechat_article_dynamic', data, insert_ignore=True)
+    sql = tools.make_insert_sql('wechat_article_dynamic', data, auto_update=True, insert_ignore=True)
     db.add(sql)
 
 
